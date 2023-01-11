@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> WEB 231 – Enterprise JavaScript I</title>
+<link rel="stylesheet" type="text/css" href="styles/global.css">
+</head>
+<body>
+    <script>
+        function helloWorld(paragraphText) {
+            let lastName = 'Christman';
+            paragraphText = console.log('You are now in ' + lastName + '\'s world!');
+            document.getElementById("txtMyWorld").innerHTML = "You are now in " + lastName + "'s world!";
+            return paragraphText;
+        }
+    
+        function courseButtonClick() {
+            alert("WEB 231 – Enterprise JavaScript I";);
+        }
+    </script>
+    <h1>Exercise 2.2 - Hello JavaScript</h1>
+    <button id="btnMyCourse" type="button" onclick="courseButtonClick()">What course am I taking?</button>
+    <p id="txtMyWorld"></p>
+    <nav>
+    <a href="week-1/index.html" class="return-home">Return</a>
+    </nav>
+</body>
+</html>
