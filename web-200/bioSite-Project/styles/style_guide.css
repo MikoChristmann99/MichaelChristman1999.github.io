@@ -1,0 +1,170 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: teal;
+    color: white;
+}
+
+#biosite-header {
+background-color: #3C275A;
+color: #FFF;
+padding: 40px;
+text-align: center;    
+}
+
+p {
+    font-size: 125%;
+    line-height: 2;
+}
+
+.subject-name {
+    font-size: 325%; 
+    margin-right: 125px;
+}
+
+.job-title {
+    text-align:center;
+    margin-top:150px;
+}
+
+.top-left-image {
+    float: left;
+    margin-left:-25px;
+    margin-top: -75px;
+}
+
+.relevant-experience {
+    text-align:center;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top:-180px;
+}
+
+.primary-navigation {
+    margin-left: 1000px;
+    margin-top: -130px;
+}
+
+#subject-container {
+    width:100%;
+}
+
+#left-section {
+    text-align:center;
+    margin-top: 160px;
+    margin-left: 55px;
+    width:30%;
+}
+
+#right-section  {
+    text-align:center; 
+    margin-top: -170px;
+    width:30%;
+}
+
+#center-photo  {
+    margin-top:-190px;
+    margin-left: 41%;
+}
+
+.page-button {
+  background-color: #4CAF50;
+  border: 2px solid ivory;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 7px 6px;
+  cursor: pointer;
+}
+
+.page-button-1 {
+    margin-left: -170px;
+}
+
+.page-button-3 {
+    margin-left: 170px;
+}
+
+.ryan-portrait {
+    display: block;
+    margin-top:25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul { 
+    list-style-position: inside; 
+}
+
+.primary-container {
+    margin-left: 237px;
+    width: 90%;
+}
+
+#landing-page-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:160px;
+}
+
+.main-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.resume-caption-1 {
+    margin-top: 80px;
+}
+
+.resume-caption-2 {
+    margin-top: -346px;
+}
+
+.resume-caption-1, .resume-list-1 {
+    margin-left: 105px;
+    width:40%;
+}
+
+.resume-caption-2, .resume-list-2 {
+    margin-left: 655px;
+    width:40%;
+}
+
+#footer-section { 
+    background-color: rgb(202, 202, 151); 
+    color: teal;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.subheader-text {
+    font-size: 250%;
+    text-align: center;
+}
+
+a {
+    color: pink;
+}
+
+a:hover {
+    color: peachpuff;
+}
+
+#jockey-content {
+    margin-bottom: 200px;
+}
+
+#jockey-info {
+    margin-left: 30px;
+    font-size: 80%;
+}
+
+#jockey-photos {
+    margin-top: -1260px;
+    margin-left:55%;
+    font-size: 80%;
+}
