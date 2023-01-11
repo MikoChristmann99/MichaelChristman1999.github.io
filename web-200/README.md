@@ -5,7 +5,7 @@ This is my Bellevue University course repo for my Fundamentals of Web Developmen
 <ul>
   <li><a href="#">Coming soon!</a></li>
   <li><a href="#">Coming soon!</a></li>
-  <li><a href="https://michaelchristman1999.github.io/bioSite/">Final bioSite Project</a></li>
+  <li><a href="https://michaelchristman1999.github.io/bioSite-Project/">Final bioSite Project</a></li>
  </ul>
 
 <h2>Contributors</h2>
