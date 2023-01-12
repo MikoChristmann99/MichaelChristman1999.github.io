@@ -7,20 +7,25 @@
 </head>
 <body>
     <script>
-        function helloWorld(paragraphText) {
+        function courseButtonClick() {
+            alert("WEB 231 – Enterprise JavaScript I");
+        }
+    </script>
+    <!-- This section marks the start of all the visible page content -->
+    <h1>Exercise 2.2 - Hello JavaScript</h1>
+    <!-- This button when pressed will display an onclick alert message -->
+    <button id="btnMyCourse" type="button" onclick="courseButtonClick()">What course am I taking?</button>
+    <!-- The paragraph with the id of 'txtMyWorld' is empty at first and doesn't have a value initially-->
+    <p id="txtMyWorld"></p>
+    <!-- The following function inside the script tags will return a text value to the txtMyWorld paragraph tag-->
+    <script>
+    function helloWorld(paragraphText) {
             let lastName = 'Christman';
             paragraphText = console.log('You are now in ' + lastName + '\'s world!');
             document.getElementById("txtMyWorld").innerHTML = "You are now in " + lastName + "'s world!";
             return paragraphText;
         }
-    
-        function courseButtonClick() {
-            alert("WEB 231 – Enterprise JavaScript I";);
-        }
-    </script>
-    <h1>Exercise 2.2 - Hello JavaScript</h1>
-    <button id="btnMyCourse" type="button" onclick="courseButtonClick()">What course am I taking?</button>
-    <p id="txtMyWorld"></p>
+        </script>
     <nav>
     <a href="week-1/index.html" class="return-home">Return</a>
     </nav>
