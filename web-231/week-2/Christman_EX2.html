@@ -3,31 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <title> WEB 231 – Enterprise JavaScript I</title>
+<!-- External stylesheet link allows the HTML page to access "return-home" class styles -->
 <link rel="stylesheet" type="text/css" href="styles/global.css">
 </head>
 <body>
-    <script>
-        function courseButtonClick() {
-            alert("WEB 231 – Enterprise JavaScript I");
-        }
-    </script>
     <!-- This section marks the start of all the visible page content -->
     <h1>Exercise 2.2 - Hello JavaScript</h1>
-    <!-- This button when pressed will display an onclick alert message -->
+    <!-- The button "btnMyCourse" when pressed will display an onclick alert message -->
     <button id="btnMyCourse" type="button" onclick="courseButtonClick()">What course am I taking?</button>
-    <!-- The paragraph with the id of 'txtMyWorld' is empty at first and doesn't have a value initially-->
-    <p id="txtMyWorld"></p>
-    <!-- The following function inside the script tags will return a text value to the txtMyWorld paragraph tag-->
-    <script>
-    function helloWorld(paragraphText) {
-            let lastName = 'Christman';
-            paragraphText = console.log('You are now in ' + lastName + '\'s world!');
-            document.getElementById("txtMyWorld").innerHTML = "You are now in " + lastName + "'s world!";
-            return paragraphText;
-        }
-        </script>
+    <!-- Paragraph with the id of 'txtMyWorld' initially has a value of "Hi", but our statement inside the first set of script tags changes it to a different string.-->
+    <p id="txtMyWorld">Hi!</p>
+    <!-- Index -->
     <nav>
-    <a href="week-1/index.html" class="return-home">Return</a>
+    <a href="https://michaelchristman1999.github.io/web-231/week-1/" class="return-home">Return</a>
     </nav>
+    <!-- The following statement inside the script tags will return a different string to the text value of the txtMyWorld paragraph tag-->
+    <script>
+        document.getElementById("txtMyWorld").innerHTML = "You are now in Christman's world!";
+    </script>
+    <!-- Second set of script tags is what links the "btnMyCourse" button onclick alert function to the main HTML page. -->
+    <script src="week-2/scripts/buttonMyCourseClick.js">
+    </script>
 </body>
 </html>
