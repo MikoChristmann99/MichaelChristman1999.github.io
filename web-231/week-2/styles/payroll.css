@@ -1,0 +1,36 @@
+ul  {
+    border: 1px dotted red;
+}
+
+.return-home {
+    color: 4F3674;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: D6A800;
+    color: 4F3674;
+}
+
+a:visited {
+    background-color: 3C275A;
+    
+}
+
+html {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Header tag background, text, border, and padding styles*/
+h1, h2, h3, h4 {
+    background-color: #3C275A;
+    color: white;
+    border: #D6A800 solid 1px; 
+    padding: 10px;
+}
