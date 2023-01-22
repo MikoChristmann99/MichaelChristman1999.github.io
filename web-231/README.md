@@ -5,6 +5,7 @@ This is my Bellevue University course repo for my Intro to JavaScript class.
 <ul>
   <li><a href="https://michaelchristman1999.github.io/web-231/week-1/">Week 1</a></li>
   <li><a href="https://michaelchristman1999.github.io/web-231/week-2/">Week 2</a></li>
+  <li><a href="https://michaelchristman1999.github.io/web-231/week-3/">Week 3</a></li>
  </ul>
 <h2>Contributors</h2>
 <ul>
