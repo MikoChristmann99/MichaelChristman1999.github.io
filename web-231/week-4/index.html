@@ -1,0 +1,48 @@
+<!--
+  Title: christman-number-game.html
+  Author: Michael Christman
+  Date: 1-28-2023
+  Description: A webpage that allows a user to input a number to guess, which will be 
+  checked to see if it matches the randomly generated number.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- The christman_number_game.css for external styles -->
+	<link rel="stylesheet" href="styles/christman_number_game.css" type="text/css">
+         <title>WEB 231 – Enterprise JavaScript I</title>
+
+</head>
+
+<body>
+	<div id="container">
+		<h1 class="app-header">Welcome to the numbers game!</h1>
+		<div class="card">
+			<div class="card-title">Pick a number between 1 and 10</div>
+			<div class="card-content">
+				<div class="form">
+					<div class="form-field">
+						<label>Guess the number:</label>
+						<input type="text" class="input" id="txtMyNumber" name="myNumber">
+						<br> </div>
+					<div class="form-field">
+						<button id="btnSubmit" class="btn btn-primary full-width" onclick="numberGuess()">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="results-container">
+		<div class="card">
+			<div class="card-title">Results</div>
+			<div class="app-header" id="results"></div>
+		</div> <br>
+		<a href="" class="return-home">Return</a> </div>
+	<script src="scripts/christman_number_game.js">
+	</script>
+</body>
+
+</html>
