@@ -1,0 +1,52 @@
+<!--
+  Title: week-5/christman_sequence_game.html
+  Author: Michael Christman
+  Assignment 5.2 - Sequence Game
+  Date: 2-4-2023
+  Description: An HTML webpage which allows a user to select three different sequences to view including the Fibonacci sequence.
+-->
+<!DOCTYPE html>
+   <html lang='en'>
+      <head>
+         <meta charset="UTF-8">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/christman_sequence_game.css" type="text/css">
+         <title>WEB 231 – Enterprise JavaScript I</title>
+      </head>
+      <body>
+         <div id="container">
+            <h1 class="app-header">Welcome to the sequence game!</h1>
+            <div class="card">
+               <div class="card-title">Sequence Selection Form</div>
+               <div class="form">
+                  <div class="form-field">
+                     <label>Choose a number sequence:</label>
+                     <!--Dropdown containing select options-->
+                     <select id="sequence" class="drop-down-menu">
+                        <option value="select;">--Select--</option>
+                        <option value="fibonacci">Fibonacci Sequence</option>
+                        <option value="even">Even Numbers</option>
+                        <option value="odd">Odd Numbers</option>
+                     </select>
+                  </div>
+                  <div class="form-field">
+                     <button id="btnDisplaySequence" class="btn btn-primary full-width" onclick="displaySequence()">Display Sequence</button>
+                  </div>
+               </div>
+            </div>
+            <!--Card to display results-->
+            <div id="results-container">
+               <div class="card">
+                  <div class="card-title">Sequence Results</div>
+                  <div class="app-header" id="results"></div>
+               </div>
+               <br>
+               <!-- Link to return back to the index.html page. -->
+               <a class="return-home" href="https://michaelchristman1999.github.io/web-231/week-1/">Return</a>    
+            </div>
+         </div>
+	<script src="scripts/christman_sequence_game.js">
+	</script>
+</body>
+</html>
