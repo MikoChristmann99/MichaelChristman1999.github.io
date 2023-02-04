@@ -1,0 +1,170 @@
+/*
+  Title: styles/christman_sequence_game.css
+  Author: Michael Christman
+  Assignment 5.2 - Sequence Game
+  Date: 2-4-2023
+  Description: External CSS styles for the sequence guessing game assignment.
+*/
+
+body {
+	font-family: 'Oswald', verdana, arial, sans-serif;
+}
+
+#container {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 10px;
+}
+
+#container {
+	padding: 10px;
+}
+
+.return-home {
+	color: #453674;
+	text-decoration: none;
+	/*text-align: center;*/
+}
+
+
+/* When a user hovers over a link, it will change to the color specified below. */
+
+.return-home:hover {
+	background-color: #D6A800;
+	color: #4F3674;
+}
+
+
+/* Styling for card. */
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 600px;
+	margin: 3% auto 0;
+	transition: .3s;
+}
+
+
+/* Title of card. */
+
+.card-title {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 400;
+	color: #4F3674;
+}
+
+
+/* Styling for button */
+
+.btn {
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	padding: 15px 32px;
+	color: #000;
+}
+
+.btn-primary {
+	background-color: #4f3674;
+	color: white;
+}
+
+
+/* Width styling for button. */
+
+.full-width {
+	width: 62%;
+}
+
+
+/* Styling for button on hover. */
+
+.btn-primary:hover {
+	background-color: #d6a800;
+	color: #4f3674;
+}
+
+
+/*Styling for card on hover. */
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+/* Styling for content of the card. */
+
+.card-content {
+	padding: 2px 16px;
+}
+
+
+/* Styling for form. */
+
+.form {
+	display: inline-grid;
+	grid-template-columns: auto;
+	width: 600px;
+	margin: 3% auto 0;
+}
+
+.form-field {
+	padding: 20px;
+}
+
+
+/* Input styling. */
+
+.input {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+/* This will change colors to indicate that it's been previously visited. */
+
+.return-home:visited {
+	color: #3C275A;
+}
+
+
+/* Adding styling to the border around the unordered list. */
+
+ul {
+	border-style: dotted;
+	border-width: 1px;
+	border-color: red;
+}
+
+.drop-down-menu {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.app-header {
+	font-size: 28px;
+	text-align: center;
+}
+
+#results-container {
+	width: 600px;
+	margin: 3% auto 0;
+}
+
+h1 {
+	font-weight: 400;
+}
