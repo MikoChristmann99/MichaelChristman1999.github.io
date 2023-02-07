@@ -1,0 +1,95 @@
+<!--
+   Title: christman-in-and-out-books.html
+   Author: Michael Christman
+   Date: 2/7/2023
+   Description: An assignment which demonstrates and teaches the concept of creating object literals
+   -->
+
+   <!DOCTYPE html>
+   <html lang='en'>
+      <head>
+         <meta charset="UTF-8">
+         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="styles/christman-in-n-out-books.css" type="text/css">
+         <title>WEB 231 – Enterprise JavaScript I</title>
+      </head>
+      <body>
+         <div id="container">
+            <h1 class="app-header">Welcome to In-N-Out-Books</h1>
+            <div class="card">
+               <div class="card-title">My Favorites</div>
+               <div class="form">
+                  <div class="form-field">
+                     <label>Choose a listing</label>
+                     <!--Dropdown containing select options-->
+                     <select id="favoriteList" class="drop-down-menu">
+                        <option value="select">--Select--</option>
+                        <option value="books">Top 3 Favorite Books</option>
+                        <option value="authors">Top 3 Favorite Authors</option>
+                     </select>
+                  </div>
+                  <div class="form-field">
+                     <button id="btnDisplayListing" class="btn btn-primary full-width" onclick="displayListing()">Display Listing</button>
+                  </div>
+               </div>
+                    <!-- Link to return back to the index.html page. -->
+                    <a class="return-home" href="../index.html">Return</a>
+            </div>
+            
+         </div>
+
+         <div id="table-container">
+            <!--Card to display book table-->
+            <div class="card" id="book-table">
+               <div class="card-title">Top 3 Favorite Books</div>
+               <table id="favorite-books">
+                  <tr>
+                     <th>ISBN</th>
+                     <th>Title</th>
+                     <th>Pages</th>
+                  </tr>
+                  <tr>
+                     <td id=”txtBook1ISBN”></td>
+                     <td id=”txtBook1Title”></td>
+                     <td id=”txtBook1Pages”></td>
+                  </tr>
+                  <tr>
+                     <td id=”txtBook2ISBN”></td>
+                     <td id=”txtBook2Title”></td>
+                     <td id=”txtBook2Pages”></td>
+                  </tr>
+                  <tr>
+                     <td id=”txtBook3ISBN”></td>
+                     <td id=”txtBook3Title”></td>
+                     <td id=”txtBook3Pages”></td>
+                  </tr>
+               </table>
+            </div>
+
+            <!--Card to display author table-->            
+            <div class="card" id="author-table">
+               <div class="card-title">Top 3 Favorite Authors</div>
+               <table id="favorite-authors">
+                  <tr>
+                     <th>Name</th>
+                     <th>Title</th>
+                  </tr>
+                  <tr>
+                     <td id=”txtAuthor1Name”></td>
+                     <td id=txtAuthor1Genre></td>
+                  </tr>
+                  <tr>
+                     <td id=”txtAuthor2Name”></td>
+                     <td id=txtAuthor2Genre></td>
+                  </tr>
+                  <tr>
+                     <td id=”txtAuthor3Name”></td>
+                     <td id=txtAuthor3Genre></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <script src="scripts/christman-in-and-out-books.js">
+         </script> 
+      </body>
+   </html>
