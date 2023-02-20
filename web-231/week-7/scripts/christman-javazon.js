@@ -1,6 +1,6 @@
-//Title: christman-javazon.css
+//Title: week-7/scripts/christman-javazon.js
 //Author: Michael Christman
-//Date: 2/20/2023
+//Date: 2/16/2023
 //Description: Created and assigned values to variable for the JavaScript classes: Product, Service, and Employee  
 
 //Creating a Product class with a constructor & 4 params.          
