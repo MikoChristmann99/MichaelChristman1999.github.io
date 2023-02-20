@@ -1,0 +1,182 @@
+<!--
+   Title: christman-javazon.html
+   Author: Michael Christman
+   Date: 2-16-2021
+   Description: Javazon assignment to practice creating objects
+   and classes.
+-->
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset="UTF-8">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../global.css" type="text/css">
+      <link rel="stylesheet" href="styles/christman_javazon.css" type="text/css">
+      <title>WEB 231 – Enterprise JavaScript I</title>
+   </head>
+   <body>
+      <div id="container">
+         <h1 class="app-header">Welcome to the Javazon App!</h1>
+         <div class="card">
+            <div class="card-title">Javazon Selection Form</div>
+            <div class="form">
+               <div class="form-field">
+                  <label>Choose a listing.</label>
+                  <!--Dropdown containing select options-->
+                  <select id="listing" class="drop-down-menu">
+                     <option value="select">--Select--</option>
+                     <option value="products">Products</option>
+                     <option value="services">Services</option>
+                     <option value="employees">Employees</option>
+                  </select>
+               </div>
+               <div class="form-field">
+                  <button id="btnDisplayListing" class="btn btn-primary full-width" onclick="displayListing()">Display Listing</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="table-container">
+         <!--Card to display product table-->
+         <div class="card" id="products-table">
+            <div class="card-title">Javazon Products</div>
+            <table id="product-table">
+               <tr>
+                  <th>Product ID</th>
+                  <th>Description</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total Value</th>
+               </tr>
+               <tr>
+                  <td id=productId1></td>
+                  <td id=productDesc1></td>
+                  <td id=productPrice1></td>
+                  <td id=productQty1></td>
+                  <td id=productTotVal1></td>
+               </tr>
+               <tr>
+                  <td id=productId2></td>
+                  <td id=productDesc2></td>
+                  <td id=productPrice2></td>
+                  <td id=productQty2></td>
+                  <td id=productTotVal2></td>
+               </tr>
+               <tr>
+                  <td id=productId3></td>
+                  <td id=productDesc3></td>
+                  <td id=productPrice3></td>
+                  <td id=productQty3></td>
+                  <td id=productTotVal3></td>
+               </tr>
+               <tr>
+                  <td id=productId4></td>
+                  <td id=productDesc4></td>
+                  <td id=productPrice4></td>
+                  <td id=productQty4></td>
+                  <td id=productTotVal4></td>
+               </tr>
+               <tr>
+                  <td id=productId5></td>
+                  <td id=productDesc5></td>
+                  <td id=productPrice5></td>
+                  <td id=productQty5></td>
+                  <td id=productTotVal5></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="service-table-container">
+         <!--Card to display services table-->
+         <div class="card" id="services-table">
+            <div class="card-title">Javazon Services</div>
+            <table id="service-table">
+               <tr>
+                  <th>Service ID</th>
+                  <th>Description</th>
+                  <th>Hourly Rate</th>
+                  <th>Minimum Billable hours</th>
+               </tr>
+               <tr>
+                  <td id=serviceId1></td>
+                  <td id=serviceDesc1></td>
+                  <td id=serviceHrlyRate1></td>
+                  <td id=serviceMinHrs1></td>
+               </tr>
+               <tr>
+                  <td id=serviceId2></td>
+                  <td id=serviceDesc2></td>
+                  <td id=serviceHrlyRate2></td>
+                  <td id=serviceMinHrs2></td>
+               </tr>
+               <tr>
+                  <td id=serviceId3></td>
+                  <td id=serviceDesc3></td>
+                  <td id=serviceHrlyRate3></td>
+                  <td id=serviceMinHrs3></td>
+               </tr>
+               <tr>
+                  <td id=serviceId4></td>
+                  <td id=serviceDesc4></td>
+                  <td id=serviceHrlyRate4></td>
+                  <td id=serviceMinHrs4></td>
+               </tr>
+               <tr>
+                  <td id=serviceId5></td>
+                  <td id=serviceDesc5></td>
+                  <td id=serviceHrlyRate5></td>
+                  <td id=serviceMinHrs5></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="employee-table-container">
+         <!--Card to display emp table-->
+         <div class="card" id="employee-table">
+            <div class="card-title">Javazon Employee</div>
+            <table id="employees-table">
+               <tr>
+                  <th>Employee ID</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Salary</th>
+               </tr>
+               <tr>
+                  <td id=empId1></td>
+                  <td id=empLastName1></td>
+                  <td id=empFirstName1></td>
+                  <td id=empSalary1></td>
+               </tr>
+               <tr>
+                  <td id=empId2></td>
+                  <td id=empLastName2></td>
+                  <td id=empFirstName2></td>
+                  <td id=empSalary2></td>
+               </tr>
+               <tr>
+                  <td id=empId3></td>
+                  <td id=empLastName3></td>
+                  <td id=empFirstName3></td>
+                  <td id=empSalary3></td>
+               </tr>
+               <tr>
+                  <td id=empId4></td>
+                  <td id=empLastName4></td>
+                  <td id=empFirstName4></td>
+                  <td id=empSalary4></td>
+               </tr>
+               <tr>
+                  <td id=empId5></td>
+                  <td id=empLastName5></td>
+                  <td id=empFirstName5></td>
+                  <td id=empSalary5></td>
+               </tr>
+            </table>
+         </div>
+      </div>         
+	<script src="scripts/christman_javazon.js">
+             
+	</script>
+</body>
+</html>
