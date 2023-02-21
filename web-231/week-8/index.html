@@ -1,0 +1,55 @@
+<!--
+   Title: christman-alphabet-game.html
+   Author: Michael Christman
+   Date: Februrary 21st, 2023
+   Description: Alphabet game exercise to learn and practice creating arrays.
+   -->
+   <!DOCTYPE html>
+   <html lang='en'>
+      <head>
+         <meta charset="UTF-8">
+         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="styles/christman-alphabet-game.css" type="text/css">
+         <title>WEB 231 – Enterprise JavaScript I</title>
+      </head>
+      <body>
+         <div id="container">
+            <h1 class="app-header">Welcome to the Alphabet Game!</h1>
+            <div class="card">
+               <div class="card-title">Alphabet Number Form</div>
+               <div class="form">
+                  <div class="form-field">
+                     <label>Alphabet Letter Position</label>
+                     <input type="text" id="txtPosition" class="input">                  
+                  </div>
+                  <div class="form-field">
+                     <button id="btnFindLetter" class="btn btn-primary full-width" onclick="findLetter()">Find Letter</button>
+                  </div>
+               </div>
+               <br>
+               <!-- Link to return back to the index.html page. -->
+               <a class="return-home" href="../index.html">Return</a>  
+            </div>
+            <br>
+            <!--Alphabet Container-->
+            <div id="alphabet-container">
+               <div class="card">
+                  <div class="card-title">Letters in the alphabet</div>
+                  <div class="card-content" id="alphabet"></div>
+               </div>
+            </div>
+            <!--Card to display results-->
+            <div id="results-container">
+               <div class="card">
+                  <div class="card-title">Results</div>
+                  <div class="card-content" id="alphabet-results"></div>
+               </div>
+               <br>
+            </div>
+         </div>
+        
+	<script src="scripts/christman-alphabet-game.js">
+	</script>
+</body>
+
+</html>
