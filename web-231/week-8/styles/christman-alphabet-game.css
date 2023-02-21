@@ -1,0 +1,17 @@
+/*
+  Title: christman-alphabet-game.css
+  Author: Michael Christman
+  Date: 2/21/2023
+  Description: External CSS styles for the alphabet game assignment
+*/
+
+/* Initially hiding the results container */
+#results-container {
+display: none;
+
+}
+
+.card-content {
+  font-size: 28px;
+  text-align: center;
+}
