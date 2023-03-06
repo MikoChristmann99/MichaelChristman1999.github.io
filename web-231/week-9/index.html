@@ -1,0 +1,46 @@
+<!--
+   Title: christman-final-card-game.html
+   Author: Michael Christman
+   Date: 3/1/2023
+   Description: Final project for Enterprise JavaScript I. This is a card game app made with JavaScript and HTML.
+   -->
+   <!DOCTYPE html>
+   <html lang='en'>
+      <head>
+         <meta charset="UTF-8">
+         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"
+         <link rel="stylesheet" href="styles/christman-final-card-game.css" type="text/css">
+
+         <!--Link for material design icons-->
+         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
+         <title>WEB 231 – Enterprise JavaScript I</title>
+      </head>
+      <body>
+         <div id="container">
+            <h1 class="app-header">Welcome to the Card Game!</h1>
+            <div class="card">
+               <div class="card-title">Card Dealer</div>
+               <div class="form">
+                  <div class="form-field">
+                     <button id="btnDealCards" class="btn btn-primary full-width" onclick='dealCards()'>Deal Cards</button>
+                  </div>
+               </div>
+            <br>
+            <!-- Link to return back to the index.html page. -->
+            <a class="return-home" href="https://michaelchristman1999.github.io/web-231/week-1/">Return</a>                
+            </div>
+            <!--Card to display results-->
+            <div id="results-container">
+               <div class="card">
+                  <div class="card-title">Shuffled Cards</div>
+                  <div class="card-content" id="shuffled-results"></div>
+               </div>
+               <br>
+            </div>
+         </div>
+     
+ <script src="scripts/christman-final-card-game.js">
+ </script>
+</body>
+
+</html>
