@@ -2,9 +2,12 @@
     "name": "package.json",
     "author": "Michael Christman",
     "private": true,
+    "scripts": scripts/index.js,
     "version": "0.0.1",
     "dependencies": {
         "ejs": "^2.6.1",
         "express": "^4.16.4"
     }
 }
+
+
