@@ -1,0 +1,18 @@
+/**
+   Title: christman-restaurant.css
+   Author: Michael Christman
+   Date: March 31st, 2023
+   Description: Styling for haefner-restaurant.html
+  */
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 3% auto 0;
+    width: 260px;
+    display: inline;
+  }
