@@ -1,0 +1,52 @@
+/**
+    Title: site.css
+    Author: William John Austin
+    Date: 03/17/2023
+    Description: Styling for Global Web 330 Site
+*/
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#icon-mode:hover{
+    cursor: pointer;
+}
+#icon-text {
+    padding-left: 10px;
+}
+.pull-right{
+    float:right;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+.full-width {
+    width: 100%;
+}
+#form {
+    display: inline-block;
+    grid-template-columns: auto;
+}
+#form-field{
+    padding: 20px;
+}
+.app-header{
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: none;
+    font-weight: normal;
+}
+.assign-container{
+    padding:10px;
+}
+.assign-content{
+    width: 600px;
+    margin: 3% auto 0;
+}
+.assign-results-text{
+    text-align: center;
+    font-size: 28px;
+
+}

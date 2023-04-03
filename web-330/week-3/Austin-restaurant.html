@@ -1,0 +1,204 @@
+<!--
+    Title: Austin-restaurant.html
+    Author: William John Austin
+    Date: 03/28/2023
+    Description: Restaurant App for Web 330
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WEB 330 - Enterprise JavaScript II</title>
+
+<!--Style Sheets-->
+        <link rel="stylesheet" type="text/css" href="../site.css">
+        <link rel="stylesheet" type="text/css" href="../theme.css">
+        <link rel="stylesheet" type="text/css" href="Austin-restaurant.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--JavaScript for Theme Selection-->
+        <script src="../theme.js"></script>
+
+    </head>
+    <body class="light-theme">
+
+<!--Larger Menu Card-->
+        <div id="container">
+            <h1 class="app-header">Welcome to the Restaurant App!</h1>
+                <div id="input-card" class="assign-container, assign-content">
+                    <p id="card-title">Restaurant Menu</p>
+
+                <!--Beverage Selection Card-->
+                    <div class ="card">
+                        <div class="card-title">Beverages</div>
+                        <div class="card-contents" id="beverages">
+                            <label for="coke">
+                                <input type="checkbox" id="coke" value="2.50" name="coke">
+                                Coke ($2.50)
+                            </label><br />
+                            <label for="sprite">
+                                <input type="checkbox" id="sprite" value="2.50" name="sprite">
+                                Sprite ($2.50)
+                            </label><br />
+                            <label for="lemonade">
+                                <input type="checkbox" id="lemonade" value="2.50" name="lemonade">
+                                Lemonade ($2.50)
+                            </label><br />
+                            <label for="bottled-water">
+                                <input type="checkbox" id="bottled-water" value="2.00" name="bottled-water">
+                                Bottle of Water ($2.00)
+                            </label><br />
+                        </div>
+                    </div>
+
+                <!--Appetizer Selection Card-->
+                    <div class ="card">
+                        <div class="card-title">Appetizers</div>
+                        <div class="card-contents" id="appetizers">
+                            <label for="garlic-bread">
+                                <input type="checkbox" id="garlic-bread" value="10.50"name="garlic-bread">
+                                Garlic Bread ($10.50)
+                            </label><br />
+                            <label for="bruschetta">
+                                <input type="checkbox" id="bruschetta" value="12.00" name="bruschetta">
+                                Heirloom Tomato Bruschetta ($12.00)
+                            </label><br />
+                            <label for="salad">
+                                <input type="checkbox" id="salad" value="11.00"name="salad">
+                                Pear & Walnut Salad ($11.00)
+                            </label><br />
+                            <label for="meatballs">
+                                <input type="checkbox" id="meatballs" value="16.00" name="meatballs">
+                                Nonna's Famous Meatballs ($16.00)
+                            </label><br />
+                        </div>
+                    </div>
+
+                <!--Main Course Selection Card-->
+                    <div class ="card">
+                        <div class="card-title">Main Courses</div>
+                        <div class="card-contents" id="main-courses">
+                            <label for="penne">
+                                <input type="checkbox" id="penne" value="16.75" name="penne">
+                                Penne ala Vodka ($16.75)
+                            </label><br />
+                            <label for="chicken">
+                                <input type="checkbox" id="chicken" value="22.00" name="chicken">
+                                Chicken Parmesean ($22.00)
+                            </label><br />
+                            <label for="ravioli">
+                                <input type="checkbox" id="ravioli" value="20.00" name="ravioli">
+                                Butternut Squash Ravioli ($20.00)
+                            </label><br />
+                            <label for="steak">
+                                <input type="checkbox" id="steak" value="75.80" name="steak">
+                                72 Day Dry Aged Rib-Eye ($75.80)
+                            </label><br />
+                        </div>
+                    </div>
+
+                <!--Dessert Selection Card-->
+                    <div class ="card">
+                        <div class="card-title">Desserts</div>
+                        <div class="card-contents" id="desserts">
+                            <label for="tiramisu">
+                                <input type="checkbox" id="tiramisu" value="15.55" name="tiramisu">
+                                World Renown Tiramisu ($15.55)
+                            </label><br />
+                            <label for="gelato">
+                                <input type="checkbox" id="gelato" value="9.50" name="gelato">
+                                Daily Gelato ($9.50)
+                            </label><br />
+                            <label for="cake">
+                                <input type="checkbox" id="cake" value="12.99" name="cake">
+                                Molten Chocolate Cake ($12.99)
+                            </label><br />
+                            <label for="cannoli">
+                                <input type="checkbox" id="cannoli" value="10.00" name="cannoli">
+                                Cannoli ($10.00)
+                            </label><br />
+                        </div>
+                    </div>
+                        <button id="btnOrder", class="btn-primary full-width">Place Order</button>
+                    </div>
+                </div>
+
+<!--Back to Landing-->
+
+                <a href="../index.html" class="return-home">Return</a>
+
+<!--Order Total Card-->
+            <div class = "assign-container">
+                <div class = "assign-contents">
+                    <div id="card">
+                        <p id="card-title">Order Summary</p>
+                        <div id="assign-results-header"></div>
+                        <div id="order-total" class="assign-results-text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--JavaScript-->
+
+<script type="module">
+
+    import {Bill, Beverage, Appetizer, MainCourse, Dessert} from "./index.js";
+
+   
+   
+    //Once you click this button, this happens
+
+ document.getElementById("btnOrder").onclick = function() {
+
+    //Variable Definitions 
+    const mainCoursesEl = document.getElementById("main-courses");
+    const mainCourses = mainCoursesEl.getElementsByTagName("input");
+
+    const beveragesEl = document.getElementById("beverages");
+    const beverages = beveragesEl.getElementsByTagName("input");
+
+    const appetizersEl = document.getElementById("appetizers");
+    const appetizers = appetizersEl.getElementsByTagName("input");
+
+    const dessertsEl = document.getElementById("desserts");
+    const desserts = dessertsEl.getElementsByTagName("input");
+
+    //Creating a new Bill Object 
+    let myBill = new Bill ();
+
+
+    //Figuring out what is checked and adding it to the total
+    for (let mainCourse of mainCourses){
+        if (mainCourse.checked){
+            myBill.addMainCourse(new MainCourse(mainCourse.name, mainCourse.value));
+        }
+    }
+    for (let beverage of beverages){
+        if (beverage.checked){
+            myBill.addBeverage(new Beverage(beverage.name, beverage.value));
+        }
+    }
+    for (let dessert of desserts){
+        if (dessert.checked){
+            myBill.addDessert(new Dessert(dessert.name, dessert.value));
+        }
+    }
+    for (let appetizer of appetizers){
+        if (appetizer.checked){
+            myBill.addAppetizer(new Appetizer(appetizer.name, appetizer.value));
+        }
+    }
+    
+    //Adding it all together to get the total bill
+    let total = myBill.getTotal(); 
+
+    //Placing that total in the Order Total Card
+    document.getElementById("order-total").innerHTML=`Your order total is ${total}`;
+}
+</script>
+    </body>
+</html>
+
+
