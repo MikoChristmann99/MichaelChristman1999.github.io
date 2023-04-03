@@ -1,17 +1,14 @@
-/** 
-   Title: main-course.js
-   Author: Michael Christman
-   Date: March 31st, 2023
-   Description: Module main-course.js
+/*
+    ==================
+    Title: main-course.js, 
+    Author: William Austin
+    Date: 3/28/2023
+    Description: Creating a Main Course Class Module 
 */
+import {Product} from "./products.js";
 
-import { Product } from "./product.js";
-
-export class MainCourse extends Product {
-
-    constructor(name, price){
-
+export class MainCourse extends Product{
+    constructor (name, price){
         super(name, price);
-
     }
 }

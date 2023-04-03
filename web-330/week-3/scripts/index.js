@@ -1,12 +1,12 @@
-/** 
-   Title: index.js
-   Author: Michael Christman
-   Date: March 31st, 2023
-   Description: Module index.js
+/*
+    ==================
+    Title: index.js, 
+    Author: William Austin
+    Date: 3/28/2023
+    Description: Combining all modules into one easy to import/export .js file 
 */
-export * from "scripts/appetizer.js";
-export * from "scripts/beverage.js";
-export * from "scripts/dessert.js";
-export * from "scripts/main-course.js";
-export * from "scripts/bill.js";
-export * from "scripts/product.js";
+export * from "./appetizer.js";
+export * from "./beverage.js";
+export * from "./dessert.js";
+export * from "./main-course.js";
+export * from "./bill.js";
