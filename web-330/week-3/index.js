@@ -1,9 +1,9 @@
 /*
     ==================
     Title: index.js, 
-    Author: William Austin
-    Date: 3/28/2023
-    Description: Combining all modules into one easy to import/export .js file 
+    Author: Michael Christman
+    Date: March 31st, 2023
+    Description: This is the index.js file combining all the other class modules for this assignment.
 */
 export * from "./appetizer.js";
 export * from "./beverage.js";
