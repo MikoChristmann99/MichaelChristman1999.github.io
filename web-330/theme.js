@@ -1,13 +1,13 @@
 /*
     ==================
-    Title: theme.js, 
-    Author: William Austin
-    Date: 3/17/2023
-    Description: Theme Choosing JS Code
+    Title: theme.js
+    Author: Michael Christman
+    Date: March 31st, 2023
+    Description: Theme selection JavaScript code
 */
 
 /**
- * Set the default theme to light if one has not been set
+ * Sets the default theme to light mode if one hasn't already been set
  */
 function setDefaultTheme()
 {
