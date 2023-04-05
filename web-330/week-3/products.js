@@ -1,9 +1,9 @@
 /*
     ==================
     Title: product.js, 
-    Author: William Austin
-    Date: 3/28/2023
-    Description: Creating a Product Class Module as a parent module for Menu Items
+    Author: Michael Christman
+    Date: March 31st, 2023
+    Description: This is the products class parent module for the other class modules.
 */
 export class Product{
     constructor(name, price){
