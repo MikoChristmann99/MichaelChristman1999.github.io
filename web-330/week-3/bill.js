@@ -1,9 +1,9 @@
 /*
     ==================
     Title: bill.js, 
-    Author: William Austin
-    Date: 3/28/2023
-    Description: Creating a Bill Class Module using other js Modules
+    Author: Michael Christman
+    Date: March 31st, 2023
+    Description: This is the restaurant bill class module
 */
 export class Bill
 {
