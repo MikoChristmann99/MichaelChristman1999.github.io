@@ -1,9 +1,9 @@
 /*
     ==================
     Title: beverage.js, 
-    Author: William Austin
-    Date: 3/28/2023
-    Description: Creating a Beverage Class Module 
+    Author: Michael Christman
+    Date: March 31st, 2023
+    Description: This is the beverage class module
 */
 
 import {Product} from "./products.js";
