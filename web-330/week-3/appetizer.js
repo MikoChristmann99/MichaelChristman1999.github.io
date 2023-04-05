@@ -1,9 +1,9 @@
 /*
     ==================
     Title: appetizer.js, 
-    Author: William Austin
-    Date: 3/28/2023
-    Description: Creating a Appetizer Class Module 
+    Author: Michael Christman
+    Date: March 31st, 2023
+    Description: This is the appetizer class module
 */
 
 
