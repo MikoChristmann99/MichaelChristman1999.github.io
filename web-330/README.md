@@ -1,4 +1,4 @@
-Repository for Web-330 Enterprise JavaScript II
+Main repo for the Web-330 Enterprise JavaScript II course from Bellevue University
 
 <h1>WEB 330 Enterprise JavaScript II</h1>
 <h2>Contributors</h2>
