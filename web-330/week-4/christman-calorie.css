@@ -1,0 +1,29 @@
+/**
+    Title: christman-calorie.css
+    Author: Michael Christman
+    Date: April 7th, 2023
+    Description: External stylesheet CSS file for the week 4 calorie app assignment
+*/
+
+#foodList {
+    float: right;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+#btnSearch{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 15px 32px;
+    width: 100%;
+}
+.expert{
+    padding-bottom: 20px;
+}
