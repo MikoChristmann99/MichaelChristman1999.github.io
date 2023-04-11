@@ -1,6 +1,6 @@
 <!--
     Title: index.ejs
-    Author: William John Austin
+    Author: Michael Christman
     Date: April 10th, 2023
     Description: This is the index.ejs file for the Pets-R-Us project landing page
 -->
@@ -8,7 +8,7 @@
 <html lang="en">
     <head>
 
-<!--Style Sheets - still looking for a good font, but I'm ok with the ones there now-->
+<!-- External stylesheet link (I tried to finding the best, most compatible styles and fonts that I possibly could) -->
         <link rel="stylesheet" href="/styles/pets-r-us.css">
         <title>Pets-R-Us</title>
     </head>
@@ -25,7 +25,7 @@
                     <li><a class="navigation-link" href="/booking">Booking</a></li>
                     <li><a class="navigation-link" href="/customers">Customers</a></li>
                     <li><a class="navigation-link" href="/services">Services</a>
-                        <ul class="hidden-list">
+                        <ul class="hidden-navigation-list">
                             <li><a class="hidden-navigation-link" href="/grooming">Grooming</a></li>
                             <li><a class="hidden-navigation-link" href="/boarding">Boarding</a></li>
                             <li><a class="hidden-navigation-link" href="/grooming">Training</a></li>
@@ -106,20 +106,20 @@
             <hr>
 
 <!--Testimonials Card-->
-            <div class="card" id="testimonials">
+            <div class="card" id="testimonials-card">
                 <h2 class="card-title">Customer Testimonials</h2>
-                <h3 id="subheader">People are raving about us!</h3>
-                <div class="testimonial">
+                <h3 id="testimonial-subheader">We normally prefer to refrain from bragging, but customers are raving about our services!</h3>
+                <div class="customer-testimonial">
                     "I've been a customer of Pets-R-Us for years and I couldn't be happier with their service. 
                     The staff is always friendly and knowledgeable, and they have a great selection of natural 
                     products for my pets. Thank you, Pets-R-Us!" - Mary T. 
                 </div> <br> <hr>
-                <div class="testimonial">
+                <div class="customer-testimonial">
                     "I recently adopted a new puppy and Pets-R-Us was my go-to for everything I needed. They helped me 
                     find the right food, toys, and accessories for my new furry friend, and their advice has been invaluable. 
                     I highly recommend Pets-R-Us!" - John M.
                 </div><br><hr>
-                <div class="testimonial">
+                <div class="customer-testimonial">
                     "As a bird owner, I've always struggled to find high-quality bird food and toys. But since discovering 
                     Pets-R-Us, I no longer have that problem. They have a great selection of bird products and the staff is 
                     always happy to help me find what I need. Thank you, Pets-R-Us!" - Lisa S.
@@ -153,9 +153,9 @@
 
 <!--Footer-->
             <footer>
-                <div class="contact-info">
+                <div class="contact-information">
                       <p>Phone: (555) 123-4567</p>
-                      <p id="email">Email: info@petsrus.com</p>
+                      <p id="email-address">Email: ypetrus91@petsrus.com</p>
                 </div> 
             </footer>
         </div>
