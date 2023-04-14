@@ -1,9 +1,9 @@
 /*
     ==================
     Title: product.js, 
-    Author: William Austin
-    Date: 4/12/2023
-    Description: Creating a Product Class Module for Repair Shop App
+    Author: Michael Christman
+    Date: April 14th, 2023
+    Description: In this file, I created a Product class module for the Repair Shop app assignment
 */
 
 export class Product{
