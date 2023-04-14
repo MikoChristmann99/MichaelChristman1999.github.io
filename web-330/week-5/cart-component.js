@@ -1,9 +1,9 @@
 /*
     ==================
-    Title: cart-component.js, 
-    Author: William Austin
-    Date: 4/12/2023
-    Description: Creating a CartComponent class, which creates the 'cart-component' html tag
+    Title: cart-component.js
+    Author: Michael Christman
+    Date: April 14th, 2023
+    Description: In this JS file, I created a CartComponent class, which in turn creates the 'cart-component' html tag
 */
 
 export class CartComponent extends HTMLElement {
