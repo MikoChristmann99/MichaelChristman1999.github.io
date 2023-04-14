@@ -18,10 +18,12 @@
     font-size: 28px;
     color: var(--card-title-color);
 }
+
 cart-component:hover{
     cursor: pointer;
 
 }
+
 #btnAddProduct{
     border: none;
     text-align: center;
