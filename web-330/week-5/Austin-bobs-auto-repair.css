@@ -1,0 +1,41 @@
+/**
+    Title: Austin-bobs-auto-repair.css
+    Author: William John Austin
+    Date: 04/12/2023
+    Description: Bob's Auto Repair Store Styling
+*/
+#cart-message {
+    float: right;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-left: 20px;
+}
+
+#cartIcon{
+    margin: 0, 0;
+    padding-left: 290px;
+    font-size: 28px;
+    color: var(--card-title-color);
+}
+cart-component:hover{
+    cursor: pointer;
+
+}
+#btnAddProduct{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 15px 32px;
+    width: 100%;
+}
+.expert{
+    padding-bottom: 20px;
+}
+i:hover{
+    cursor: pointer;
+}
