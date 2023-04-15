@@ -2,7 +2,7 @@
     Title: christman-bobs-auto-repair.html
     Author: Michael Christman
     Date: April 14th, 2023
-    Description: This is the HTML page for Auto Repair Shop App for the Web 330 Bellevue University course.
+    Description: This is the HTML page for the Auto Repair Shop App for WEB 330.
 -->
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@
             <h1 class="app-header">Welcome to Bob's Automotive Repair Shop!</h1>
                 <div id="card" class="assign-container, assign-content">
 
-        <!--Product List Card-->
+        <!--Product Listing card-->
                     <p id="card-title">Product Listing</p>
                     <cart-component></cart-component> <br> <br>
                     <div id="form">
@@ -46,11 +46,11 @@
                     </div>
                 </div>
 
-    <!--Back to Landing-->
+    <!--Back to WEB 330 Landing Page-->
 
             <a href="../index.html" class="return-home">Return</a>
 
-    <!--Shopping Cart Card-->
+    <!--Shopping Cart card-->
                 <div class = "assign-container">
                     <div class = "assign-contents">
                         <div id="card" class="expert">
@@ -65,7 +65,7 @@
 
     <script type="module">
 
-        //Imports from other JS Files
+        //Import statements for other JavaScript files
         import {CartComponent} from "./cart-component.js";
         import {Product} from "./product.js";
         import {ShoppingCart} from "./shopping-cart.js";
@@ -76,7 +76,7 @@
         setCartCount();
 
 
-        //What Happens when you click Add to Cart, should display an Alert Message saying what you've added
+        //When a user clicks 'Add to Cart', it should display an alert message which tells the user what they've added
         document.getElementById("btnAddProduct").onclick = function(){
 
             let productList = document.getElementById("productList");
@@ -91,7 +91,7 @@
             }
         }
 
-        //What happens when you click the cart icon (should generate the cart)
+        //When a user clicks the cart icon, it should generate the cart.
 
         document.getElementById("cartIcon").onclick = function(){
             let cartDisplayTable = `<table class="table">
