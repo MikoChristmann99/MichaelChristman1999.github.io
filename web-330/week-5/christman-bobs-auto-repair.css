@@ -2,7 +2,7 @@
     Title: christman-bobs-auto-repair.css
     Author: Michael Christman
     Date: April 14th, 2023
-    Description: External stylesheet for Bob's Auto Repair Store app assignment
+    Description: External stylesheet for Bob's Auto Repair Store app assignment for WEB 330
 */
 #cart-message {
     float: right;
@@ -35,9 +35,11 @@ cart-component:hover{
     padding: 15px 32px;
     width: 100%;
 }
+
 .expert{
     padding-bottom: 20px;
 }
+
 i:hover{
     cursor: pointer;
 }
