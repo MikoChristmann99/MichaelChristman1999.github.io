@@ -1,0 +1,29 @@
+.polaroid {
+    width: 30%;
+    display: inline-block;
+    margin-left: 25px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  #about-master{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: #a8dcc2;
+    padding: 20px;
+    
+  }
+  #about-contents{
+    line-height: 1.2em;
+    letter-spacing: 1pt;
+  }

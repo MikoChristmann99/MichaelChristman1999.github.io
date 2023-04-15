@@ -1,0 +1,59 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+#banner{
+    background-color: #B9FDDA;
+    color: rgb(32, 55, 55);
+    text-align: center;
+    font-style: italic;
+    font-size: 20pt;
+    padding-top: 10px;
+    border-bottom: 5px solid #5B7D6C;
+}
+#nav-container{
+    background-color: #6DFFB4;
+    text-align: center;
+    font-size: 18pt;
+    border-bottom: 10px solid #5B7D6C;
+    padding-top: 10px;
+}
+
+.nav{
+    display: inline;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: darkslategray;
+    padding: 10px;
+}
+a:visited{
+    text-decoration: none;
+    color: rgb(32, 55, 55);
+}
+a:hover{
+    text-decoration: underline;
+    background-color: #5B7D6C;
+    color: #6DFFB4;
+}
+#footer{
+    text-align: center;
+    background-color: #6DFFB4;
+    border-top: 5px solid #5B7D6C;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 2px;
+    margin-top: -3px;
+}
+#bucket-list-card{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+    line-height: 2em;
+}
+#bucket-list-master{
+    background-color: #d4f8e5;
+    padding: 20px;
+}
