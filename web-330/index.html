@@ -1,92 +1,60 @@
-<!--
-    Title: index.html, 
-    Author: Michael Christman
-    Date: March 30th, 2023
-    Description: Landing page for Bellevue University WEB 330 course.
--->
+<!-- Author Name: Michael Christman -->
+<!-- Creation Date: March 17th, 2023 -->
+<!-- Assignment Name: 1.3 - Environment Setup -->
+<!-- File Path: MichaelChristman1999/web-330/week-1/index.html -->
 
+<!-- This is the beginning of the HTML document -->
 <!DOCTYPE html>
-   <html lang='en'>
-      <head>
-         <meta charset="UTF-8">
-         <link rel="stylesheet" type="text/css" href="main.css">
-         <link rel="stylesheet" type="text/css" href="theme.css">
-         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <title>WEB 330 – Enterprise JavaScript II</title>
-        <script src="theme.js"></script>
-    </head>
-
-    <body class="light-theme">
-
-        <i onclick="toggleMode(this)" id="icon-mode" class="fa fa-toggle-off pull-right" style="font-size: 28px;">
-            <span id="icon-text"></span>
-        </i>
-        <br>
-        <!-- Beginning of div container and landing page document -->
-        <div id="container">
-
-            <h1>Michael Christman's Landing Page</h1>
-            <h2> WEB 330 Enterprise JavaScript II</h2>
-            <hr>
-            <!-- Links to all the weekly assignments in this course -->
-            <h3>Weekly Assignments</h3>
-                <ul>
-                    <li><a href="week-2/christman-palindrome.html">Assignment 2.2</a></li>
-                    <li><a href="week-3/christman-restaurant.html">Assignment 3.2</a></li>
-                    <li><a href="week-4/christman-calorie.html">Assignment 4.2</a></li>
-                    <li><a href="week-5/christman-bobs-auto-repair.html">Assignment 5.2</a></li>
-                    <li>Assignment 6.3</li>
-                    <li>Assignment 7.3</li>
-                    <li>Assignment 8.3</li>
-                </ul>
-                <!-- Links to our class projects (including the personal portfolio) -->
-            <h3>Projects</h3>
-                <ul>
-                    <li>Personal Portfolio</li>
-                    <li><a href="https://michaelchristman1999.github.io/web-231/index.html">Web 231 - Landing Page</a></li>
-                </ul>
-            <!-- Important links to valuable course technologies/resources -->
-            <h4>Important Links</h4>
-            <ul>
-                <li><a href="https://github.com/buwebdev/web-330">WEB 330's GitHub Repository</a></li>
-                <li><a href="https://bruinconnect.bellevue.edu/">BRUIN Connect</a></li>  
-                <li><a href="https://validator.w3.org/">W3C HTML Validator</a></li>
-                <li><a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validator</a></li>
-                <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
-                <li><a href="https://www.w3schools.com/js/js_best_practices.asp">JavaScript Best Practices</a></li>
-            </ul>
-        </div>
-        <script>
-        //This method sets the default color theme based on the user's previous preference
-            setDefaultTheme();
-        //The code inside the toggleMode function allows the user to toggle between the two different color themes (light and dark mode)
-            function toggleMode(x)
-            {
-                let colorTheme = document.body.classList; 
-                let iconMode = x.classList; 
-    
-                if (colorTheme.value === "light-theme")
-                {
-                    localStorage.clear();
-                    localStorage.setItem("mode", "dark-theme");
-                    localStorage.setItem("iconMode", "fa-toggle-on");
-                    localStorage.setItem("iconText", "Dark Mode");
-                }
-
-                else
-                {
-                    localStorage.clear();
-                    localStorage.setItem("mode", "light-theme");
-                    localStorage.setItem("iconMode", "fa-toggle-off");
-                    localStorage.setItem("iconText", "Light Mode");
-                }
-                colorTheme.value = localStorage.getItem("mode");
-                iconMode.value = `fa ${localStorage.getItem("iconMode")} pull-right`;
-                document.getElementById("icon-text").innerHTML = localStorage.getItem("iconText");
-            }
-    
-
-        </script>
-    </body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>WEB 330 – Enterprise JavaScript II</title>
+      <link rel="stylesheet" href="styles/theme.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <!--CDN Stylesheets-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="light-theme">
+      <!-- Placing most of the webpage content inside div tags within a class named container, so
+        everything on the landing page is styled equally.
+         --> 
+         <i onclick="toggleMode(this)" id="icon-mode" class="fa fa-toggle-off pull-right"
+         style="font-size: 28px;"><span id="icon-text"></span></i>
+         <br>
+      <div class="container">
+         <h1>Michael Christman's Landing Page</h1>
+         <h2>WEB 330 Enterprise JavaScript II</h2>
+         <hr>
+         <!-- Underneath the Weekly Assignments subheader, I included an unordered list of weekly class assignments. -->
+         <h3>Weekly Assignments</h3>
+         <ul>
+            <li><a href="https://michaelchristman1999.github.io/web-330/week-2/index.html" target="_blank">Assignment 2.2</a></li>   
+            <li><a href="https://michaelchristman1999.github.io/web-330/week-3/index.html" target="_blank">Assignment 3.2</a></li>  
+            <li><a href="https://michaelchristman1999.github.io/web-330/week-4/index.html" target="_blank">Assignment 4.2</a></li>
+            <li><a href="https://michaelchristman1999.github.io/web-330/week-5/christman-bob-auto-repair.html" target="_blank">Assignment 5.2</a></li>
+            <li><a href="https://michaelchristman1999.github.io/web-330/week-6/index.html" target="_blank">Assignment 6.2</a></li>
+            <li><a href="https://michaelchristman1999.github.io/web-330/week-7/index.html" target="_blank">Assignment 7.2</a></li>
+            <li><a href="https://michaelchristman1999.github.io/web-330/week-8/index.html" target="_blank">Assignment 8.2</a></li>
+         </ul>
+         <!-- Underneath the Projects subheader, I included an unordered list of course projects. -->
+         <h3>Projects</h3>
+         <ul>
+            <li><a href="https://michaelchristman1999.github.io/web-330/Personal-Portfolio/index.html" target="_blank">Michael Christman's Personal Portfolio</a></li>
+            <li><a href="https://michaelchristman1999.github.io/web-231/week-1/index.html" target="_blank">WEB 231's Landing Page</a></li>
+         </ul>
+         <!-- Underneath the Important Links subheader, I included an unordered list of important links. -->
+         <h4>Important Links</h4>
+         <ul>
+          <li><a href="https://github.com/buwebdev/web-330" target="_blank">WEB 330’s GitHub Repository</a></li>
+          <li><a href="ttps://bruinconnect.bellevue.edu/" target="_blank">BRUIN Connect</a></li>
+            <li><a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a></li>
+            <li><a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/js/js_best_practices.asp" target="_blank">JavaScript Best Practices</a></li>
+         </ul>
+      </div>
+   </body>
+   <!--Script tags with the link to the theme.js script file. -->
+   <script src="scripts/theme.js"></script>
 </html>
