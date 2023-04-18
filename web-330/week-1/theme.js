@@ -1,6 +1,6 @@
 /*
    ==================================================
-   Title: Assignment 1.3 - Environment Setup
+   Title: web-330/week-1/theme.js
    Author: Michael Christman
    Date: March 18th, 2023
    Description: JavaScipt code which allows the user to switch the theme of the landing page.
