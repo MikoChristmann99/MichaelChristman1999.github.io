@@ -12,7 +12,7 @@ class Header extends HTMLElement
             <div id="navigation-container">
                 <ul id="navigation-list">
                     <li class="navigation">
-                        <a href="index-page.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li class="navigation">
                     <a href="about-page.html">About</a>
