@@ -18,10 +18,10 @@
     border-bottom: 5px solid #5B7D6C;
 }
 #navigation-container{
-    background-color: #6DFFB4;
+    background-color: #FFDF00;
     text-align: center;
     font-size: 18pt;
-    border-bottom: 10px solid #5B7D6C;
+    border-bottom: 10px solid #800080;
     padding-top: 10px;
 }
 
@@ -41,13 +41,13 @@ a:visited{
 }
 a:hover{
     text-decoration: underline;
-    background-color: #5B7D6C;
+    background-color: #800080;
     color: #6DFFB4;
 }
 #footer{
     text-align: center;
-    background-color: #6DFFB4;
-    border-top: 5px solid #5B7D6C;
+    background-color: #FFDF00;
+    border-top: 5px solid #800080;
     font-size: 12pt;
     font-weight: bold;
     padding: 2px;
