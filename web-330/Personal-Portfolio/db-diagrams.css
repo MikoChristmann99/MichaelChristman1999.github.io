@@ -5,9 +5,10 @@
     padding: 10px;
     grid-gap: 20px;
 }
+
 .assign-container{
     padding:10px;
-    background-color: #d4f8e5;
+    background-color: #8AECFF;
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
