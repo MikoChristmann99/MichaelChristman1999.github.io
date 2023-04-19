@@ -1,0 +1,24 @@
+.paragraph-text {
+    width: 70%;
+}
+
+#resume-statement, .resume-caption-1, .resume-caption-2, .resume-list-1, .resume-list-2 { 
+    border: 2px solid gold;
+    background-color: white;
+    color: teal;
+    padding: 4px;
+}
+
+.page-button-1 {
+    margin-left: -170px;
+}
+
+.page-button-3 {
+    margin-left: 170px;
+}
+
+#resume-statement {
+    margin-left: 180px;
+    margin-top: -30px;
+    width: 70%;
+} 
